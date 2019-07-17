@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         binding.setLoginVM(loginViewModel);
-        binding.setLifecycleOwner(this);
+        binding.setLifecycleOwner(this); // owner
 
 
         loginViewModel.getUser().observe(this, new Observer<User>() {
